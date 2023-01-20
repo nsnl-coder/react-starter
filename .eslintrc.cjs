@@ -24,7 +24,15 @@ module.exports = {
     'react/jsx-one-expression-per-line': 0,
     'import/no-extraneous-dependencies': [
       'error',
-      { devDependencies: ['**/*.test.js', '**/*.spec.js', 'vite.config.ts'] },
+      {
+        devDependencies: [
+          '**/*.test.tsx',
+          '**/*.spec.tsx',
+          'vite.config.ts',
+          'src/test/setupTest.ts',
+          'src/test/test-utils.ts',
+        ],
+      },
     ],
   },
 };
